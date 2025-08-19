@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="fr">
 <head>
@@ -25,7 +26,7 @@
   .portrait{width:120px;height:120px;border-radius:14px;object-fit:cover;filter:grayscale(10%);border:1px solid var(--rule);}
   @media (max-width:560px){ .portrait{width:88px;height:88px;} }
 
-  /* Frise */
+  /* Frise (style karpathy) */
   .timeline{position:relative;margin:12px 0 8px 0;}
   .timeline::before{content:"";position:absolute;left:calc(var(--rail) - 1px);top:0;bottom:0;width:2px;background:var(--rule);}
   .entry{position:relative;display:flex;gap:16px;align-items:flex-start;padding:16px 0;}
@@ -34,9 +35,10 @@
   .entry::before{content:"";position:absolute;left:calc(var(--rail) - var(--dot)/2);top:28px;width:var(--dot);height:var(--dot);border-radius:50%;background:var(--bg);border:2px solid #d0d0d0;}
   .logo{width:24px;height:24px;object-fit:contain;vertical-align:middle;margin-right:8px;border-radius:4px;filter:grayscale(100%);}
   ul.min{padding:0;margin:8px 0 0 0;list-style:none;} ul.min li{margin:6px 0;}
-  .note{color:var(--muted);font-size:14px;margin-top:8px;}
+  .thumb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px;}
+  .thumb{width:100%;height:auto;border:1px solid var(--rule);}
 
-  /* Public talks */
+  /* Public talks : cartes simples */
   .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--card-gap);}
   .card{border:1px solid var(--rule);border-radius:12px;padding:12px;background:#fff;filter:grayscale(15%);}
   .card:hover{filter:none}
@@ -44,11 +46,15 @@
   .card h3{font-size:15px;margin:0 0 6px 0;font-weight:600;}
   .card p{font-size:14px;margin:0;color:#333;}
 
-  /* Écrits & références */
+  /* Clients */
   .logo-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;}
-  .logo-grid img{width:46px;height:46px;object-fit:contain;filter:grayscale(100%);border:1px solid var(--rule);border-radius:8px;padding:6px;background:#fff;}
+  .logo-grid img{width:56px;height:56px;object-fit:contain;filter:grayscale(100%);border:1px solid var(--rule);border-radius:8px;padding:6px;background:#fff;}
 
-  @media (max-width:560px){ :root{--rail:78px;} .entry::before{top:26px;} }
+  /* Écriture (liste façon karpathy) */
+  .writing-list{margin-top:6px;}
+  .writing-list li{margin:8px 0;}
+  .date{display:inline-block;width:72px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  @media (max-width:560px){ :root{--rail:78px;} .entry::before{top:26px;} .date{width:auto;display:block;} }
 </style>
 </head>
 <body>
@@ -62,107 +68,47 @@
       <div class="small">
         <a href="https://kayro.ai" rel="noopener">Kayro.ai</a> · 
         <a href="mailto:victor@kayro.ai">victor@kayro.ai</a> · 
-        <a href="https://www.linkedin.com/in/________" rel="noopener">LinkedIn</a> · 
+        <a href="https://www.linkedin.com/in/victor-galli/" rel="noopener">LinkedIn</a> · 
         <a href="https://github.com/________" rel="noopener">GitHub</a>
       </div>
     </div>
-    <!-- Place ton fichier (ex: images/portrait.jpg) -->
+    <!-- Place ton fichier : images/portrait.jpg -->
     <img class="portrait" src="images/portrait.jpg" alt="Victor Galli">
   </div>
 
   <hr>
 
-  <!-- Frise chronologique complète -->
+  <!-- Frise chronologique (compacte, centrée sur Kayro) -->
   <div class="timeline">
 
-    <div class="entry">
-      <div class="when">2025 – aujourd’hui</div>
-      <div class="what">
-        <img class="logo" src="logos/mangas.png" alt="Mangas.io">
-        Investisseur — <strong>Mangas.io</strong>.
-        <ul class="min small">
-          <li>Participation early-stage, accompagnement produit et go-to-market.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">2024 – aujourd’hui</div>
-      <div class="what">
-        <img class="logo" src="logos/hubfranceia.png" alt="Hub FranceIA">
-        Membre — <strong>Hub FranceIA</strong>.
-        <ul class="min small">
-          <li>Veille et contributions aux groupes de travail IA appliquée.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">2024</div>
-      <div class="what">
-        <img class="logo" src="logos/epita.png" alt="EPITA">
-        Intervenant — <strong>EPITA</strong>, Major IT, Consulting &amp; Innovation (Paris).
-        <ul class="min small">
-          <li>Cours et ateliers : cadrage, prototypage, mise en prod IA.</li>
-        </ul>
-      </div>
-    </div>
-
+    <!-- Kayro (entrée principale avec vignettes) -->
     <div class="entry">
       <div class="when">2023 – aujourd’hui</div>
       <div class="what">
         <img class="logo" src="logos/kayro.png" alt="Kayro.ai">
-        <strong>CEO &amp; Co-fondateur</strong> — <a href="https://kayro.ai" rel="noopener">Kayro.ai</a>.
+        <strong>Kayro.ai</strong> — CEO &amp; co-fondateur. 
+        Nous concevons et mettons en production des systèmes d’IA appliquée dès J1. 
+        71 projets / 41 clients depuis 2023 (<a href="https://www.kayro.ai/references" rel="noopener">références</a>).
         <ul class="min small">
-          <li>71 projets / 41 clients depuis 2023 — <a href="https://www.kayro.ai/references" rel="noopener">références</a>.</li>
-          <li>Conception et mise en production de systèmes d’IA opérationnels dès J1.</li>
-          <li>Conseil stratégique dirigeants &amp; fonds sur enjeux IA.</li>
+          <li>Membre <em>Hub FranceIA</em>. Expert AI/Data <em>IA Booster – France 2030</em> (Bpifrance).</li>
+          <li>Notes et cas sur <a href="https://kayro.ai" rel="noopener">kayro.ai</a>. Partage d’apprentissages sur <a href="https://www.linkedin.com/in/victor-galli/" rel="noopener">LinkedIn</a>.</li>
+          <li>Conférences auprès de directions générales, comités d’investissement et équipes produit/data.</li>
         </ul>
+        <!-- 2–3 images de talks (remplace les fichiers) -->
+        <div class="thumb-grid">
+          <img class="thumb" src="images/talk-bpi.jpg" alt="Talk Bpifrance">
+          <img class="thumb" src="images/talk-kpmg.jpg" alt="Talk KPMG / Numeum">
+          <img class="thumb" src="images/talk-sbm.jpg" alt="Talk SBM Offshore">
+        </div>
       </div>
     </div>
 
-    <div class="entry">
-      <div class="when">2023 – aujourd’hui</div>
-      <div class="what">
-        <img class="logo" src="logos/bpifrance.png" alt="Bpifrance">
-        <strong>Expert Advisor AI/Data</strong> — Programme <em>IA Booster – France 2030</em>, Bpifrance.
-        <ul class="min small">
-          <li>Challenge et accompagnement de projets d’innovation financés par l’État.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">2023 – aujourd’hui</div>
-      <div class="what">
-        <img class="logo" src="logos/quantumlabs.png" alt="Quantum Labs">
-        <strong>Quantum Labs</strong> — IA &amp; innovation deeptech (contributions).
-        <ul class="min small">
-          <li>Exploration de concepts et transferts vers cas d’usage industriels.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">2023 – aujourd’hui</div>
-      <div class="what">
-        <img class="logo" src="logos/startadvisory.png" alt="/Start Advisory">
-        <strong>Speaker / Conférencier</strong> — <em>/Start Advisory</em> (indépendant).
-        <ul class="min small">
-          <li>Interventions : AI Camp, KPMG, Numeum, Rothschild &amp; Co, Parquest, investir&amp;+, Caisse des écoles, Ardian, RADD, PMI Board, Club DAF @ Parquest, Salon Solutions, Odealim, Total (Deep Offshore &amp; IT Group COMEX), EPITA, SI4YOU, Bremens, Unis, Astrea, Arcades, Sartorius, Inskip, SBM Offshore, G-On.</li>
-        </ul>
-      </div>
-    </div>
-
+    <!-- Expériences antérieures (résumées, style sec) -->
     <div class="entry">
       <div class="when">2022 – 2023</div>
       <div class="what">
         <img class="logo" src="logos/theodo.png" alt="Theodo FinTech">
-        <strong>Pre-sales tech &amp; product</strong> — Theodo FinTech (ex-Sipios), M33.
-        <ul class="min small">
-          <li>Design de nouveaux produits (fintech, BaaS, paiements, benefits).</li>
-          <li>Avant-vente, cadrage, stratégie produit. Compétences : conseil, vente.</li>
-        </ul>
+        Theodo FinTech (M33) — pre-sales tech &amp; product. Design de produits fintech (BaaS, paiements), cadrage et avant-vente.
       </div>
     </div>
 
@@ -170,13 +116,7 @@
       <div class="when">2018 – 2022</div>
       <div class="what">
         <img class="logo" src="logos/wavestone.png" alt="Wavestone">
-        <strong>Wavestone</strong> — Analyst → Consultant → Senior → Manager.
-        <ul class="min small">
-          <li>IT strategy, orga tech, innovation, deeptech.</li>
-          <li>Ventes ~800 k€ (Y21/22). Management : 10 consultants.</li>
-          <li>Intrapreneuriat : mécénat de compétences (6000 j/an de conseil pro bono).</li>
-          <li>Responsable staffing des missions (2020–2021).</li>
-        </ul>
+        Wavestone — analyst → manager. IT strategy, organisations tech, innovation. 800 k€ ventes (Y21/22). Mécénat de compétences 6000 j/an.
       </div>
     </div>
 
@@ -184,10 +124,7 @@
       <div class="when">2019 – 2020</div>
       <div class="what">
         <img class="logo" src="logos/petitsauvage.png" alt="Petit Sauvage">
-        <strong>Co-fondateur</strong> — Petit Sauvage (mode responsable).
-        <ul class="min small">
-          <li>Production équitable pour servir des causes sociales (@La Maison des Femmes, @WeDressFair).</li>
-        </ul>
+        Petit Sauvage — co-fondateur. Mode responsable au service de causes sociales.
       </div>
     </div>
 
@@ -195,11 +132,7 @@
       <div class="when">2016 – 2018</div>
       <div class="what">
         <img class="logo" src="logos/modis.png" alt="Modis">
-        <strong>Business Engineer</strong> — Modis (Paris).
-        <ul class="min small">
-          <li>Dev full-stack, infra, DevOps, data (exposition), secteurs énergie &amp; télécoms.</li>
-          <li>CA &gt; 1,5 M€ (1er alternant), management d’une équipe de 10.</li>
-        </ul>
+        Modis — business engineer. CA &gt;1,5 M€, management de 10. Exposition dev/infra/data dans l’énergie &amp; télécoms.
       </div>
     </div>
 
@@ -207,10 +140,7 @@
       <div class="when">2016</div>
       <div class="what">
         <img class="logo" src="logos/prasarana.png" alt="Prasarana Malaysia Berhad">
-        <strong>Strategic marketing</strong> — Prasarana Malaysia Berhad (Kuala Lumpur).
-        <ul class="min small">
-          <li>Social media, communication financière, events. La vidéo « durian » a tourné en boucle dans le métro de KL.</li>
-        </ul>
+        Prasarana (Kuala Lumpur) — strategic marketing. Social media, comm. financière, events.
       </div>
     </div>
 
@@ -226,19 +156,15 @@
     <div class="card"><div class="kicker">Parquest</div><h3>Transformer des industries par l’IA</h3><p>Playbooks d’exécution.</p></div>
     <div class="card"><div class="kicker">investir+</div><h3>Scaler une startup à impact</h3><p>Cas réels.</p></div>
     <div class="card"><div class="kicker">Caisse des écoles</div><h3>IA pour le service public</h3><p>Qualité et charge.</p></div>
-    <div class="card"><div class="kicker">RADD</div><h3>IA &amp; impact sociétal</h3><p>Externalités, garde-fous.</p></div>
     <div class="card"><div class="kicker">PMI Board</div><h3>Innover en grand groupe</h3><p>Gouvernance et cadence.</p></div>
-    <div class="card"><div class="kicker">Club DAF @ Parquest</div><h3>Transformer la finance</h3><p>Processus, contrôle, data.</p></div>
     <div class="card"><div class="kicker">TotalEnergies</div><h3>Builder un “AWS de l’IT”</h3><p>Plateformes internes.</p></div>
     <div class="card"><div class="kicker">Bremens Avocats</div><h3>Avocat &amp; IA</h3><p>Productivité &amp; risque.</p></div>
-    <div class="card"><div class="kicker">Unis / Astrea</div><h3>Pratiques dev</h3><p>Outils et méthodes.</p></div>
-    <div class="card"><div class="kicker">Arcades</div><h3>IA dans l’industrie</h3><p>Maintenance, supply, QA.</p></div>
     <div class="card"><div class="kicker">SBM Offshore</div><h3>Compétiteur AI-first</h3><p>Vision à 3 ans.</p></div>
   </div>
 
-  <!-- Écrits & références -->
-  <h2>écrits et références</h2>
-  <div class="small">clients</div>
+  <!-- Clients -->
+  <h2>clients</h2>
+  <!-- Place les fichiers logos/xxx.(svg|png). Niveaux de gris recommandé. -->
   <div class="logo-grid" aria-label="logos clients">
     <img src="logos/airliquide.png" alt="Air Liquide">
     <img src="logos/ministere-justice.png" alt="Ministère de la Justice">
@@ -250,10 +176,25 @@
     <img src="logos/saintgobain.png" alt="Saint-Gobain">
     <img src="logos/eurazeo.png" alt="Eurazeo">
     <img src="logos/totalenergies.png" alt="TotalEnergies">
+    <img src="logos/quotidien.png" alt="Quotidien (Yann Barthès)">
+    <img src="logos/acpm.png" alt="ACPM">
+    <img src="logos/utac.png" alt="UTAC">
   </div>
-  <ul class="min" style="margin-top:10px;">
-    <li><a href="https://www.kayro.ai/blog" rel="noopener">articles — blog Kayro.ai</a></li>
-    <li><a href="https://www.linkedin.com/in/________/recent-activity/all/" rel="noopener">posts linkedin</a></li>
+
+  <!-- Écriture -->
+  <h2>écriture</h2>
+  <ul class="writing-list">
+    <li><span class="date">2025</span><a href="https://www.kayro.ai/blog/pricing-outils-ia-pourquoi-le-token-mark-up-pourrait-simposer" rel="noopener">Pricing des outils IA : pourquoi le token mark-up pourrait s’imposer</a></li>
+    <li><span class="date">2025</span><a href="https://www.kayro.ai/blog/ce-quon-oublie-encore-dans-les-comites-dinvestissement-ia" rel="noopener">Ce qu’on oublie encore dans les comités d’investissement IA</a></li>
+    <li><span class="date">2025</span><a href="https://www.kayro.ai/blog/80-des-agents-ia-sont-de-simples-automatisations" rel="noopener">80 % des agents IA sont de simples automatisations</a></li>
+    <li><span class="date">2025</span><a href="https://www.kayro.ai/blog/non-la-bulle-ia-na-pas-eclate-mais-certaines-illusions-oui" rel="noopener">Non, la bulle IA n’a pas éclaté — certaines illusions, oui</a></li>
+    <li><span class="date">2025</span><a href="https://cdn.prod.website-files.com/6798ed9bba6f58e11f462391/67d8a723d7e1d97eb8b9116b_Knowledge%20Graph%20Offshore%20Zone.webp" rel="noopener">Knowledge Graph “offshore zone” (visuel)</a></li>
+    <li><span class="date">2024</span><a href="https://www.kayro.ai/blog/large-language-models-lessentiel-pour-se-lancer" rel="noopener">LLM : l’essentiel pour se lancer</a></li>
+    <li><span class="date">2024</span><a href="https://www.kayro.ai/blog/lancer-un-projet-de-deep-learning-ou-le-mariage-heureux-de-la-recherche-et-du-produit" rel="noopener">Lancer un projet de Deep Learning : le mariage heureux de la recherche et du produit</a></li>
+    <li><span class="date">2024</span><a href="https://www.kayro.ai/blog/estimer-le-cout-dun-projet-ia-comment-eviter-les-pieges-et-choisir-un-prestataire-serieux" rel="noopener">Estimer le coût d’un projet IA : éviter les pièges et choisir un prestataire sérieux</a></li>
+    <li><span class="date">2024</span><a href="https://www.kayro.ai/blog/comment-lintelligence-artificielle-transforme-le-secteur-du-conseil-en-2024" rel="noopener">Comment l’IA transforme le secteur du conseil en 2024</a></li>
+    <li><span class="date">2024</span><a href="https://www.kayro.ai/blog/deployer-une-application-ia-sappuyant-sur-les-llm-optimiser-le-triangle-des-performances-critiques" rel="noopener">Déployer une app IA sur LLM : optimiser le triangle des perfs critiques</a></li>
+    <li><span class="date">2024</span><a href="https://www.kayro.ai/blog/debusquer-les-meilleurs-cas-dusage-de-lintelligence-artificielle-ou-reussir-ses-entretiens-utilisateurs" rel="noopener">Débusquer les meilleurs cas d’usage IA : réussir ses entretiens utilisateurs</a></li>
   </ul>
 
 </div>
