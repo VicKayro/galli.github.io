@@ -6,332 +6,257 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="IA, conseil, conférences.">
 <style>
-  /* Palette et typo minimalistes à la karpathy.ai */
-  :root { --fg:#111; --muted:#555; --bg:#fff; --rule:#eaeaea; --max:860px; }
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);}
-  body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
-  a{color:#000;text-decoration:underline;}
-  a:hover{text-decoration:none;}
-  .wrap{max-width:var(--max);margin:32px auto;padding:0 16px;}
-  h1{font-size:28px;margin:0 0 4px 0;}
-  h2{font-size:18px;margin:26px 0 10px 0;font-weight:600;text-transform:lowercase;}
-  hr{border:0;border-top:1px solid var(--rule);margin:18px 0;}
-  .lead{color:var(--muted);margin:6px 0 14px 0;}
-  .row{display:flex;gap:14px;align-items:flex-start;margin:14px 0;}
-  .when{flex:0 0 96px;color:var(--muted);font-variant-numeric:tabular-nums;}
-  .what{flex:1;}
-  .logo{width:24px;height:24px;object-fit:contain;vertical-align:middle;margin-right:8px;border-radius:4px;filter:grayscale(100%);}
-  .thumb{width:100%;max-width:860px;height:auto;border:1px solid var(--rule);}
-  ul.min{padding:0;margin:8px 0 0 0;list-style:none;}
-  ul.min li{margin:6px 0;}
-  .small{font-size:14px;color:var(--muted);}
-  .grid-logos{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0;}
-  .grid-logos img{width:28px;height:28px;object-fit:contain;filter:grayscale(100%);}
-  .note{color:var(--muted);font-size:14px;margin-top:12px;}
-  @media (max-width:520px){ .when{flex-basis:72px;} }
-</style>
-</head>
-<body>
-<div class="wrap">
-
-  <!-- En-tête -->
-  <h1>Victor Galli</h1>
-  <div class="lead">J’aime construire des systèmes IA utiles et les déployer dans des organisations réelles.</div>
-
-  <div class="small">
-    <a href="https://kayro.ai" rel="noopener">Kayro.ai</a> · 
-    <a href="mailto:victor@kayro.ai">victor@kayro.ai</a> · 
-    <a href="https://www.linkedin.com/in/________" rel="noopener">LinkedIn</a> · 
-    <a href="https://github.com/________" rel="noopener">GitHub</a>
-  </div>
-
-  <hr>
-
-  <!-- Timeline professionnelle (structure et ton de karpathy.ai, contenu adapté) -->
-  <div class="row">
-    <div class="when">2023 – aujourd’hui</div>
-    <div class="what">
-      <img class="logo" src="logos/kayro.png" alt="Kayro.ai">
-      J’ai fondé <a href="https://kayro.ai" rel="noopener">Kayro.ai</a>, cabinet de conseil IA. 
-      Nous cadrons les cas d’usage, prototypons vite, puis industrialisons ce qui crée du ROI.
-      <ul class="min small">
-        <li>Offres : diagnostics IA, ateliers direction, prototypes, déploiements.</li>
-        <li>Focus ICP : directeurs de cinémas, PME/ETI.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Ajoute ici tes expériences antérieures (remplacer logos/texte dès que tu récupères LinkedIn) -->
-  <div class="row">
-    <div class="when">Avant</div>
-    <div class="what">
-      <span class="small">Interventions/partenariats (sélection) :</span>
-      <div class="grid-logos">
-        <img src="logos/kpmg.png" alt="KPMG">
-        <img src="logos/numeum.png" alt="Numeum">
-        <img src="logos/rothschild.png" alt="Rothschild &amp; Co">
-        <img src="logos/parquest.png" alt="Parquest">
-        <img src="logos/totalenergies.png" alt="TotalEnergies">
-        <img src="logos/pmi.png" alt="PMI">
-        <img src="logos/sbm.png" alt="SBM Offshore">
-        <img src="logos/bremens.png" alt="Bremens Avocats">
-        <img src="logos/arcades.png" alt="Arcades">
-        <img src="logos/unis.png" alt="Unis / Astrea">
-        <img src="logos/caisse-ecoles.png" alt="Caisse des écoles">
-        <img src="logos/investirplus.png" alt="investir&amp;+">
-      </div>
-      <div class="note">Remplace ces fichiers par tes vrais logos (PNG/SVG en niveaux de gris).</div>
-    </div>
-  </div>
-
-  <h2>talks (sélection)</h2>
-  <ul class="min">
-    <li>AI Camp — Estimer un projet IA</li>
-    <li>KPMG — À quoi ressemblera l’audit dans 10 ans ?</li>
-    <li>Numeum + Rothschild &amp; Co — L’IA pour les cabinets de conseil</li>
-    <li>Parquest — La transformation des industries par l’IA</li>
-    <li>CEOs des participations investir&amp;+ — Utiliser l’IA pour scaler une startup à impact</li>
-    <li>Caisse des écoles — Comment l’IA peut sauver le travail et aider le service public</li>
-    <li>Rencontres Auxerroises du Développement Durable — L’IA et son impact sociétal</li>
-    <li>Project Management Institute Board — Réussir à innover quand on est un grand groupe</li>
-    <li>Club des DAF @ Parquest — Transformer la fonction finance avec l’IA</li>
-    <li>TotalEnergies — Transformer sa DSI et builder le AWS de l’IT</li>
-    <li>Bremens Avocats — Le métier d’avocat à l’heure de l’IA</li>
-    <li>Unis / Astrea — Comment transformer ses pratiques de développeur</li>
-    <li>Arcades — L’IA dans l’industrie</li>
-    <li>SBM Offshore — Imaginer un compétiteur AI-first</li>
-  </ul>
-
-  <h2>enseignement</h2>
-  <div class="row">
-    <div class="when">formations</div>
-    <div class="what">
-      Ateliers dirigeants et équipes sur l’IA appliquée : cadrage, prototypage, mise en production.
-      <ul class="min small">
-        <li>Formats : 90 min, 1/2 journée, 2 jours.</li>
-        <li>Public : COMEX, DAF/DSI, produit, data, métiers.</li>
-      </ul>
-    </div>
-  </div>
-
-  <h2>écrits</h2>
-  <ul class="min">
-    <li><a href="https://kayro.ai" rel="noopener">Notes et cas Kayro.ai</a></li>
-    <li><a href="https://www.linkedin.com/in/________/recent-activity/all/" rel="noopener">Articles LinkedIn</a></li>
-    <li><a href="https://github.com/________" rel="noopener">Petits projets / repos</a></li>
-  </ul>
-
-  <h2>petits projets</h2>
-  <ul class="min">
-    <li>Audit IA : analyse de rendez-vous, scoring de critères, rédaction automatique.</li>
-    <li>Outils d’évaluation LLM pour PME/ETI.</li>
-  </ul>
-
-  <h2>publications</h2>
-  <ul class="min small">
-    <li>(À compléter depuis LinkedIn / slides) — références de conférences ou supports.</li>
-  </ul>
-
-  <h2>divers non trié</h2>
-  <ul class="min small">
-    <li>Sport & routines : cyclisme; formation managers; accompagnement d’équipes produit/data.</li>
-  </ul>
-
-  <div class="note">0 framework, site statique, HTML+CSS. Responsive par défaut. Logos en niveaux de gris.</div>
-
-</div>
-</body>
-</html>"
-
-je veux que tu transformes le code pour que j'ai exactement cette frise chronologique 
-ChatGPT a dit :
-
-Réflexion durant 1m 9s
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<title>Victor Galli</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="IA, conseil, conférences.">
-<style>
   :root{
-    --fg:#111; --muted:#555; --bg:#fff; --rule:#eaeaea; --max:860px;
-    --rail:96px;         /* largeur de la colonne années */
-    --dot:12px;          /* diamètre du point sur la frise */
+    --fg:#111; --muted:#555; --bg:#fff; --rule:#eaeaea; --max:960px;
+    --rail:96px; --dot:12px; --card-gap:12px;
   }
   html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);}
   body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
-  a{color:#000;text-decoration:underline;}
-  a:hover{text-decoration:none;}
+  a{color:#000;text-decoration:underline;} a:hover{text-decoration:none;}
   .wrap{max-width:var(--max);margin:32px auto;padding:0 16px;}
-  h1{font-size:28px;margin:0 0 4px 0;}
-  h2{font-size:18px;margin:26px 0 10px 0;font-weight:600;text-transform:lowercase;}
+  h1{font-size:28px;margin:0 0 6px 0;}
+  h2{font-size:18px;margin:28px 0 12px 0;font-weight:600;text-transform:lowercase;}
   hr{border:0;border-top:1px solid var(--rule);margin:18px 0;}
   .lead{color:var(--muted);margin:6px 0 14px 0;}
   .small{font-size:14px;color:var(--muted);}
-  .note{color:var(--muted);font-size:14px;margin-top:12px;}
 
-  /* FRISE CHRONOLOGIQUE — style karpathy.ai */
+  /* Header + portrait */
+  .header{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;}
+  .portrait{width:120px;height:120px;border-radius:14px;object-fit:cover;filter:grayscale(10%);border:1px solid var(--rule);}
+  @media (max-width:560px){ .portrait{width:88px;height:88px;} }
+
+  /* Frise */
   .timeline{position:relative;margin:12px 0 8px 0;}
-  .timeline::before{
-    content:""; position:absolute; left:calc(var(--rail) - 1px); top:0; bottom:0;
-    width:2px; background:var(--rule);
-  }
-  .entry{
-    position:relative; display:flex; gap:16px; align-items:flex-start;
-    padding:16px 0;
-  }
-  .entry .when{
-    flex:0 0 var(--rail);
-    color:var(--muted); font-variant-numeric:tabular-nums; text-align:right;
-    padding-right:16px;
-  }
-  .entry .what{flex:1; min-width:0;}
-  .entry::before{
-    content:""; position:absolute; left:calc(var(--rail) - var(--dot)/2);
-    top:28px; width:var(--dot); height:var(--dot); border-radius:50%;
-    background:var(--bg); border:2px solid #d0d0d0;
-  }
+  .timeline::before{content:"";position:absolute;left:calc(var(--rail) - 1px);top:0;bottom:0;width:2px;background:var(--rule);}
+  .entry{position:relative;display:flex;gap:16px;align-items:flex-start;padding:16px 0;}
+  .entry .when{flex:0 0 var(--rail);color:var(--muted);font-variant-numeric:tabular-nums;text-align:right;padding-right:16px;}
+  .entry .what{flex:1;min-width:0;}
+  .entry::before{content:"";position:absolute;left:calc(var(--rail) - var(--dot)/2);top:28px;width:var(--dot);height:var(--dot);border-radius:50%;background:var(--bg);border:2px solid #d0d0d0;}
   .logo{width:24px;height:24px;object-fit:contain;vertical-align:middle;margin-right:8px;border-radius:4px;filter:grayscale(100%);}
-  ul.min{padding:0;margin:8px 0 0 0;list-style:none;}
-  ul.min li{margin:6px 0;}
-  .thumb{width:100%;max-width:860px;height:auto;border:1px solid var(--rule);}
-  .grid-logos{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0;}
-  .grid-logos img{width:28px;height:28px;object-fit:contain;filter:grayscale(100%);}
+  ul.min{padding:0;margin:8px 0 0 0;list-style:none;} ul.min li{margin:6px 0;}
+  .note{color:var(--muted);font-size:14px;margin-top:8px;}
 
-  @media (max-width:560px){
-    :root{ --rail:78px; }
-    .entry::before{ top:26px; }
-  }
+  /* Public talks */
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--card-gap);}
+  .card{border:1px solid var(--rule);border-radius:12px;padding:12px;background:#fff;filter:grayscale(15%);}
+  .card:hover{filter:none}
+  .card .kicker{font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.02em}
+  .card h3{font-size:15px;margin:0 0 6px 0;font-weight:600;}
+  .card p{font-size:14px;margin:0;color:#333;}
+
+  /* Écrits & références */
+  .logo-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;}
+  .logo-grid img{width:46px;height:46px;object-fit:contain;filter:grayscale(100%);border:1px solid var(--rule);border-radius:8px;padding:6px;background:#fff;}
+
+  @media (max-width:560px){ :root{--rail:78px;} .entry::before{top:26px;} }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1>Victor Galli</h1>
-  <div class="lead">J’aime construire des systèmes IA utiles et les déployer dans des organisations réelles.</div>
-  <div class="small">
-    <a href="https://kayro.ai" rel="noopener">Kayro.ai</a> ·
-    <a href="mailto:victor@kayro.ai">victor@kayro.ai</a> ·
-    <a href="https://www.linkedin.com/in/________" rel="noopener">LinkedIn</a> ·
-    <a href="https://github.com/________" rel="noopener">GitHub</a>
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1>Victor Galli</h1>
+      <div class="lead">J’aime construire des systèmes IA utiles et les déployer dans des organisations réelles.</div>
+      <div class="small">
+        <a href="https://kayro.ai" rel="noopener">Kayro.ai</a> · 
+        <a href="mailto:victor@kayro.ai">victor@kayro.ai</a> · 
+        <a href="https://www.linkedin.com/in/________" rel="noopener">LinkedIn</a> · 
+        <a href="https://github.com/________" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <!-- Place ton fichier (ex: images/portrait.jpg) -->
+    <img class="portrait" src="images/portrait.jpg" alt="Victor Galli">
   </div>
 
   <hr>
 
-  <!-- FRISE -->
+  <!-- Frise chronologique complète -->
   <div class="timeline">
 
-    <!-- Exemple d’item “actuel” -->
+    <div class="entry">
+      <div class="when">2025 – aujourd’hui</div>
+      <div class="what">
+        <img class="logo" src="logos/mangas.png" alt="Mangas.io">
+        Investisseur — <strong>Mangas.io</strong>.
+        <ul class="min small">
+          <li>Participation early-stage, accompagnement produit et go-to-market.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2024 – aujourd’hui</div>
+      <div class="what">
+        <img class="logo" src="logos/hubfranceia.png" alt="Hub FranceIA">
+        Membre — <strong>Hub FranceIA</strong>.
+        <ul class="min small">
+          <li>Veille et contributions aux groupes de travail IA appliquée.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2024</div>
+      <div class="what">
+        <img class="logo" src="logos/epita.png" alt="EPITA">
+        Intervenant — <strong>EPITA</strong>, Major IT, Consulting &amp; Innovation (Paris).
+        <ul class="min small">
+          <li>Cours et ateliers : cadrage, prototypage, mise en prod IA.</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="entry">
       <div class="when">2023 – aujourd’hui</div>
       <div class="what">
         <img class="logo" src="logos/kayro.png" alt="Kayro.ai">
-        J’ai fondé <a href="https://kayro.ai" rel="noopener">Kayro.ai</a>, cabinet de conseil IA. Nous cadrons les cas d’usage, prototypons vite, puis industrialisons ce qui crée du ROI.
+        <strong>CEO &amp; Co-fondateur</strong> — <a href="https://kayro.ai" rel="noopener">Kayro.ai</a>.
         <ul class="min small">
-          <li>Offres : diagnostics IA, ateliers direction, prototypes, déploiements.</li>
-          <li>Focus ICP : directeurs de cinémas, PME/ETI.</li>
+          <li>71 projets / 41 clients depuis 2023 — <a href="https://www.kayro.ai/references" rel="noopener">références</a>.</li>
+          <li>Conception et mise en production de systèmes d’IA opérationnels dès J1.</li>
+          <li>Conseil stratégique dirigeants &amp; fonds sur enjeux IA.</li>
         </ul>
       </div>
     </div>
 
-    <!-- Exemple d’item “avant” avec logos (tu peux dupliquer/splitter par périodes réelles) -->
     <div class="entry">
-      <div class="when">avant</div>
+      <div class="when">2023 – aujourd’hui</div>
       <div class="what">
-        <span class="small">Interventions/partenariats (sélection)&nbsp;:</span>
-        <div class="grid-logos" aria-label="logos clients/partenaires">
-          <img src="logos/kpmg.png" alt="KPMG">
-          <img src="logos/numeum.png" alt="Numeum">
-          <img src="logos/rothschild.png" alt="Rothschild &amp; Co">
-          <img src="logos/parquest.png" alt="Parquest">
-          <img src="logos/totalenergies.png" alt="TotalEnergies">
-          <img src="logos/pmi.png" alt="PMI">
-          <img src="logos/sbm.png" alt="SBM Offshore">
-          <img src="logos/bremens.png" alt="Bremens Avocats">
-          <img src="logos/arcades.png" alt="Arcades">
-          <img src="logos/unis.png" alt="Unis / Astrea">
-          <img src="logos/caisse-ecoles.png" alt="Caisse des écoles">
-          <img src="logos/investirplus.png" alt="investir&amp;+">
-        </div>
-        <div class="note">Remplace par tes vrais logos (PNG/SVG en niveaux de gris).</div>
-      </div>
-    </div>
-
-    <!-- Duplique les <div class="entry"> ci-dessus pour ajouter des périodes supplémentaires -->
-    <!--
-    <div class="entry">
-      <div class="when">20XX – 20YY</div>
-      <div class="what">
-        <img class="logo" src="logos/xxx.png" alt="Nom org">
-        Titre / rôle — description courte orientée impact.
+        <img class="logo" src="logos/bpifrance.png" alt="Bpifrance">
+        <strong>Expert Advisor AI/Data</strong> — Programme <em>IA Booster – France 2030</em>, Bpifrance.
         <ul class="min small">
-          <li>Puce 1.</li>
-          <li>Puce 2.</li>
+          <li>Challenge et accompagnement de projets d’innovation financés par l’État.</li>
         </ul>
       </div>
     </div>
-    -->
 
-  </div>
-  <!-- /FRISE -->
-
-  <h2>talks (sélection)</h2>
-  <ul class="min">
-    <li>AI Camp — Estimer un projet IA</li>
-    <li>KPMG — À quoi ressemblera l’audit dans 10 ans ?</li>
-    <li>Numeum + Rothschild &amp; Co — L’IA pour les cabinets de conseil</li>
-    <li>Parquest — La transformation des industries par l’IA</li>
-    <li>CEOs des participations investir&amp;+ — Utiliser l’IA pour scaler une startup à impact</li>
-    <li>Caisse des écoles — Comment l’IA peut sauver le travail et aider le service public</li>
-    <li>Rencontres Auxerroises du Développement Durable — L’IA et son impact sociétal</li>
-    <li>Project Management Institute Board — Réussir à innover quand on est un grand groupe</li>
-    <li>Club des DAF @ Parquest — Transformer la fonction finance avec l’IA</li>
-    <li>TotalEnergies — Transformer sa DSI et builder le AWS de l’IT</li>
-    <li>Bremens Avocats — Le métier d’avocat à l’heure de l’IA</li>
-    <li>Unis / Astrea — Comment transformer ses pratiques de développeur</li>
-    <li>Arcades — L’IA dans l’industrie</li>
-    <li>SBM Offshore — Imaginer un compétiteur AI-first</li>
-  </ul>
-
-  <h2>enseignement</h2>
-  <div class="entry" style="padding:0;align-items:unset;">
-    <div class="when">formations</div>
-    <div class="what">
-      Ateliers dirigeants et équipes sur l’IA appliquée : cadrage, prototypage, mise en production.
-      <ul class="min small">
-        <li>Formats : 90 min, 1/2 journée, 2 jours.</li>
-        <li>Public : COMEX, DAF/DSI, produit, data, métiers.</li>
-      </ul>
+    <div class="entry">
+      <div class="when">2023 – aujourd’hui</div>
+      <div class="what">
+        <img class="logo" src="logos/quantumlabs.png" alt="Quantum Labs">
+        <strong>Quantum Labs</strong> — IA &amp; innovation deeptech (contributions).
+        <ul class="min small">
+          <li>Exploration de concepts et transferts vers cas d’usage industriels.</li>
+        </ul>
+      </div>
     </div>
+
+    <div class="entry">
+      <div class="when">2023 – aujourd’hui</div>
+      <div class="what">
+        <img class="logo" src="logos/startadvisory.png" alt="/Start Advisory">
+        <strong>Speaker / Conférencier</strong> — <em>/Start Advisory</em> (indépendant).
+        <ul class="min small">
+          <li>Interventions : AI Camp, KPMG, Numeum, Rothschild &amp; Co, Parquest, investir&amp;+, Caisse des écoles, Ardian, RADD, PMI Board, Club DAF @ Parquest, Salon Solutions, Odealim, Total (Deep Offshore &amp; IT Group COMEX), EPITA, SI4YOU, Bremens, Unis, Astrea, Arcades, Sartorius, Inskip, SBM Offshore, G-On.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2022 – 2023</div>
+      <div class="what">
+        <img class="logo" src="logos/theodo.png" alt="Theodo FinTech">
+        <strong>Pre-sales tech &amp; product</strong> — Theodo FinTech (ex-Sipios), M33.
+        <ul class="min small">
+          <li>Design de nouveaux produits (fintech, BaaS, paiements, benefits).</li>
+          <li>Avant-vente, cadrage, stratégie produit. Compétences : conseil, vente.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2018 – 2022</div>
+      <div class="what">
+        <img class="logo" src="logos/wavestone.png" alt="Wavestone">
+        <strong>Wavestone</strong> — Analyst → Consultant → Senior → Manager.
+        <ul class="min small">
+          <li>IT strategy, orga tech, innovation, deeptech.</li>
+          <li>Ventes ~800 k€ (Y21/22). Management : 10 consultants.</li>
+          <li>Intrapreneuriat : mécénat de compétences (6000 j/an de conseil pro bono).</li>
+          <li>Responsable staffing des missions (2020–2021).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2019 – 2020</div>
+      <div class="what">
+        <img class="logo" src="logos/petitsauvage.png" alt="Petit Sauvage">
+        <strong>Co-fondateur</strong> — Petit Sauvage (mode responsable).
+        <ul class="min small">
+          <li>Production équitable pour servir des causes sociales (@La Maison des Femmes, @WeDressFair).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2016 – 2018</div>
+      <div class="what">
+        <img class="logo" src="logos/modis.png" alt="Modis">
+        <strong>Business Engineer</strong> — Modis (Paris).
+        <ul class="min small">
+          <li>Dev full-stack, infra, DevOps, data (exposition), secteurs énergie &amp; télécoms.</li>
+          <li>CA &gt; 1,5 M€ (1er alternant), management d’une équipe de 10.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2016</div>
+      <div class="what">
+        <img class="logo" src="logos/prasarana.png" alt="Prasarana Malaysia Berhad">
+        <strong>Strategic marketing</strong> — Prasarana Malaysia Berhad (Kuala Lumpur).
+        <ul class="min small">
+          <li>Social media, communication financière, events. La vidéo « durian » a tourné en boucle dans le métro de KL.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- /Frise -->
+
+  <!-- Public talks -->
+  <h2>public talks</h2>
+  <div class="cards">
+    <div class="card"><div class="kicker">AI Camp</div><h3>Estimer un projet IA</h3><p>Approche par livrables, risques, coûts.</p></div>
+    <div class="card"><div class="kicker">KPMG</div><h3>L’audit dans 10 ans</h3><p>Automatisation, assurance, responsabilité.</p></div>
+    <div class="card"><div class="kicker">Numeum × Rothschild &amp; Co</div><h3>L’IA pour les cabinets de conseil</h3><p>Modèles économiques et delivery.</p></div>
+    <div class="card"><div class="kicker">Parquest</div><h3>Transformer des industries par l’IA</h3><p>Playbooks d’exécution.</p></div>
+    <div class="card"><div class="kicker">investir+</div><h3>Scaler une startup à impact</h3><p>Cas réels.</p></div>
+    <div class="card"><div class="kicker">Caisse des écoles</div><h3>IA pour le service public</h3><p>Qualité et charge.</p></div>
+    <div class="card"><div class="kicker">RADD</div><h3>IA &amp; impact sociétal</h3><p>Externalités, garde-fous.</p></div>
+    <div class="card"><div class="kicker">PMI Board</div><h3>Innover en grand groupe</h3><p>Gouvernance et cadence.</p></div>
+    <div class="card"><div class="kicker">Club DAF @ Parquest</div><h3>Transformer la finance</h3><p>Processus, contrôle, data.</p></div>
+    <div class="card"><div class="kicker">TotalEnergies</div><h3>Builder un “AWS de l’IT”</h3><p>Plateformes internes.</p></div>
+    <div class="card"><div class="kicker">Bremens Avocats</div><h3>Avocat &amp; IA</h3><p>Productivité &amp; risque.</p></div>
+    <div class="card"><div class="kicker">Unis / Astrea</div><h3>Pratiques dev</h3><p>Outils et méthodes.</p></div>
+    <div class="card"><div class="kicker">Arcades</div><h3>IA dans l’industrie</h3><p>Maintenance, supply, QA.</p></div>
+    <div class="card"><div class="kicker">SBM Offshore</div><h3>Compétiteur AI-first</h3><p>Vision à 3 ans.</p></div>
   </div>
 
-  <h2>écrits</h2>
-  <ul class="min">
-    <li><a href="https://kayro.ai" rel="noopener">Notes et cas Kayro.ai</a></li>
-    <li><a href="https://www.linkedin.com/in/________/recent-activity/all/" rel="noopener">Articles LinkedIn</a></li>
-    <li><a href="https://github.com/________" rel="noopener">Petits projets / repos</a></li>
+  <!-- Écrits & références -->
+  <h2>écrits et références</h2>
+  <div class="small">clients</div>
+  <div class="logo-grid" aria-label="logos clients">
+    <img src="logos/airliquide.png" alt="Air Liquide">
+    <img src="logos/ministere-justice.png" alt="Ministère de la Justice">
+    <img src="logos/fdj.png" alt="Française des Jeux">
+    <img src="logos/alegria.png" alt="Alegria">
+    <img src="logos/floa.png" alt="Floa">
+    <img src="logos/rakuten.png" alt="Rakuten">
+    <img src="logos/allianz.png" alt="Allianz">
+    <img src="logos/saintgobain.png" alt="Saint-Gobain">
+    <img src="logos/eurazeo.png" alt="Eurazeo">
+    <img src="logos/totalenergies.png" alt="TotalEnergies">
+  </div>
+  <ul class="min" style="margin-top:10px;">
+    <li><a href="https://www.kayro.ai/blog" rel="noopener">articles — blog Kayro.ai</a></li>
+    <li><a href="https://www.linkedin.com/in/________/recent-activity/all/" rel="noopener">posts linkedin</a></li>
   </ul>
-
-  <h2>petits projets</h2>
-  <ul class="min">
-    <li>Audit IA : analyse de rendez-vous, scoring de critères, rédaction automatique.</li>
-    <li>Outils d’évaluation LLM pour PME/ETI.</li>
-  </ul>
-
-  <h2>publications</h2>
-  <ul class="min small">
-    <li>(À compléter depuis LinkedIn / slides) — références de conférences ou supports.</li>
-  </ul>
-
-  <h2>divers non trié</h2>
-  <ul class="min small">
-    <li>Sport &amp; routines : cyclisme; formation managers; accompagnement d’équipes produit/data.</li>
-  </ul>
-
-  <div class="note">Site statique HTML+CSS. Logos en niveaux de gris.</div>
 
 </div>
 </body>
 </html>
+```
